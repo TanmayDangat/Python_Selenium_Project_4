@@ -150,7 +150,7 @@ class PracticeAutomation:
         inputCountry = self.driver.find_element(By.XPATH,self.selectCountryNameInput_XPATH)
         inputCountry.send_keys("India")
         inputCountry.send_keys(Keys.ENTER)
-        # self.driver.find_element(By.XPATH, self.selectCountryName_XPATH).click()
+        return inputCountry
 
     def setStreetAddress(self):
         self.driver.find_element(By.XPATH, self.streetAddress_XPATH).clear()
